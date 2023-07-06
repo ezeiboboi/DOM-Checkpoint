@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(222, 204, 173);
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 100px;
+}
+
+header{
+    background: rgb(207, 143, 32);
+    display: flex;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+header h3{
+    margin-top: 10px;
+    margin-left: 40px;
+    color: white;
+    font-size: 40px;
+}
+
+#nav-bar{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#nav-bar a{
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+}
+
+#nav-bar a:hover{
+    color: rgb(82, 53, 5);
+}
+
+#cart-btn{
+    margin-top: 12px;
+    margin-left: 200px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: 1px solid rgb(127, 83, 7);
+    color: white;
+    background: rgb(211, 174, 111);
+}
+
+#cart-btn:hover{
+    color: rgb(127, 83, 7);
+    background: rgb(236, 207, 157);
+}
+
+main{
+    padding-top: 50px;
+}
+
+#total{
+    text-align: center;
+    border: 1px solid brown;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    border-radius: 20px;
+    height: 80px;
+    width: 200px;
+}
+
+#total p{
+    font-size: larger;
+    padding-top: 30px;
+    font-weight: bolder;
+}
+
+main h2{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 50px;
+    color: rgb(57, 38, 6);
+}
+
+#products{
+    margin-left: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product {
+    color: rgb(57, 38, 6);
+    border: 1px solid brown;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); 
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    width: 250px;
+    height: 300px;
+}
+
+.product img{
+    width: 250px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#add-btn{
+    width: 120px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(127, 83, 7);
+    color: white;
+    background: rgb(211, 174, 111);
+}
+
+#cart-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+#cart{
+    display: flex;
+    justify-content: center;
+}

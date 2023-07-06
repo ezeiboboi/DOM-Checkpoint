@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Pemart</title>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <h3>PeMart<i class="fa-solid fa-cart-shopping"></i></h3>
+      </a>
+      <nav id="nav-bar">
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">Contact Us</a>
+        <a href="">Location</a>
+      </nav>
+      <button id="cart-btn" onclick="goToCart()">Cart</button>
+    </header>
+    <main>
+      <section>
+        <h2>Products</h2>
+        <div id="products">
+          <div class="product">
+            <img src="images/image1.jpeg" alt="" />
+            <h3>Earbuds</h3>
+            <p>$20.00</p>
+            <button
+              id="add-btn"
+              onclick="addToCart('Earbuds', 20,'images/image1.jpeg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="product">
+            <img src="images/image2.jpg" alt="" />
+            <h3>Sneakers</h3>
+            <p>$10.00</p>
+            <button
+              id="add-btn"
+              onclick="addToCart('Sneakers', 10, 'images/image2.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="product">
+            <img src="images/image3.jpeg" alt="" />
+            <h3>Joggers</h3>
+            <p>$5.00</p>
+            <button
+              id="add-btn"
+              onclick="addToCart('Joggers', 5,'images/image3.jpeg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="product">
+            <img src="images/image4.jpg" alt="" />
+            <h3>Sweat Shirt</h3>
+            <p>$4.00</p>
+            <button
+              id="add-btn"
+              onclick="addToCart('Sweat Shirt', 4,'images/image4.jpg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="product">
+            <img src="images/image5.jpeg" alt="" />
+            <h3>Wrist Watch</h3>
+            <p>$15.00</p>
+            <button
+              id="add-btn"
+              onclick="addToCart('Wrist Watch', 15, 'images/image5.jpeg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+          <div class="product">
+            <img src="images/image6.jpeg" alt="" />
+            <h3>Joggers</h3>
+            <p>$7.00</p>
+            <button
+              id="add-btn"
+              onclick="addToCart('Joggers', 7,'images/image6.jpeg')"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>My Cart <i class="fa-solid fa-cart-shopping"></i></h2>
+        <div id="cart">
+            <div id="cart-item"></div>
+            <div id="total">
+                <p>Total: $<span id="cart-total">0.00</span></p>
+            </div>
+          </div>
+      </section>
+    </main>
+    <script src="script/script.js"></script>
+  </body>
+</html>
